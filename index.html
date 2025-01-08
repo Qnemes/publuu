@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who We Are - Publuu</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script defer src="/src/main.js"></script>
+  </head>
+  <body>
+    <header class="main-header" role="banner">
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-wrapper">
+          <a href="/" class="logo">
+            <svg alt="Publuu Logo" width="150" height="49">
+              <use href="icons.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="nav-links">
+            <ul id="nav-list" class="nav-list">
+              <li>
+                <a
+                  id="solutions-button"
+                  class="nav-link dropdown-btn"
+                  aria-expanded="false"
+                  aria-controls="solutions-button"
+                >
+                  Solutions
+                  <svg class="chevron-icon" width="12" height="8">
+                    <use href="icons.svg#chevron-down"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <div id="solutions-dropdown" class="dropdown-menu" role="menu" hidden>
+                <a href="#enterprise" role="menuitem">Enterprise</a>
+                <a href="#small-business" role="menuitem">Small Business</a>
+                <a href="#personal" role="menuitem">Personal</a>
+                <a href="#education" role="menuitem">Education</a>
+              </div>
+
+              <li><a href="#features" class="nav-link">Features</a></li>
+              <li><a href="#examples" class="nav-link">Examples</a></li>
+              <li><a href="#prices" class="nav-link">Prices</a></li>
+              <li><a href="#help" class="nav-link">Help</a></li>
+              <li><a href="#blog" class="nav-link">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="hamburger-menu" type="button" aria-expanded="false" aria-controls="main-menu">
+          <span class="visually-hidden">Toggle menu</span>
+          <svg
+            width="20"
+            height="20"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+
+        <div class="header-actions">
+          <a href="#try-free" class="btn btn-primary">Try for free</a>
+          <a href="#login" class="btn btn-outline">Login</a>
+          <div class="language-selector">
+            <button id="lang-button" aria-expanded="false" aria-haspopup="true">
+              <svg class="flag-icon" alt="country flag" aria-hidden="true" width="32" height="32">
+                <use href="icons.svg#flag-usa"></use>
+              </svg>
+              <span>EN</span>
+              <svg class="chevron-icon" width="12" height="8">
+                <use href="icons.svg#chevron-down"></use>
+              </svg>
+            </button>
+            <div id="language-dropdown" class="dropdown-menu language-menu" role="menu" hidden>
+              <a href="#?lang=en" role="menuitem" aria-current="true">English</a>
+              <a href="#?lang=es" role="menuitem">Español</a>
+              <a href="#?lang=fr" role="menuitem">Français</a>
+              <a href="#?lang=de" role="menuitem">Deutsch</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content" role="main">
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="container">
+          <h1 id="hero-title" class="section-title">Who are we?</h1>
+          <div class="hero-content">
+            <p class="hero-text">
+              We are a passionate team of creatives and developers with roots dating back to
+              <strong>2011</strong>, when we started with an idea: helping publishers share their
+              content easily. In <strong>2017</strong>, we launched <strong>Publuu.com</strong>, making
+              it simple to turn PDFs into interactive, customizable flipbooks.
+            </p>
+            <p class="hero-text">
+              Our team is dedicated to helping you at every step of the way. Our developers work hard to
+              create practical, easy-to-use features tailored to your needs, while our customer support
+              is always ready to assist. Together, we make it easy for you to connect with audiences
+              worldwide and reach your goals.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission-section" aria-labelledby="mission-title">
+        <div class="container">
+          <div class="mission-grid">
+            <div class="mission-image">
+              <img
+                src="our-mission.png"
+                alt="Team collaboration illustration"
+                width="630"
+                height="420"
+              />
+            </div>
+            <div class="mission-content">
+              <h2 id="mission-title" class="section-title">Our mission</h2>
+              <p class="mission-intro">
+                Whether you're a business owner, a creator, or an agency, we're dedicated to bringing
+                you a complete solution for:
+              </p>
+              <ul class="mission-list" role="list">
+                <li class="mission-item">
+                  <svg class="check-bold" alt="" aria-hidden="true" width="24" height="24">
+                    <use href="icons.svg#check-bold"></use>
+                  </svg>
+                  <span>Sharing your content online in the most convenient way.</span>
+                </li>
+
+                <li class="mission-item">
+                  <svg class="check-bold" alt="" aria-hidden="true" width="24" height="24">
+                    <use href="icons.svg#check-bold"></use>
+                  </svg>
+
+                  <span>
+                    Transforming your documents into interactive, accessible, and trackable digital
+                    publications.
+                  </span>
+                </li>
+
+                <li class="mission-item">
+                  <svg class="check-bold" alt="" aria-hidden="true" width="24" height="24">
+                    <use href="icons.svg#check-bold"></use>
+                  </svg>
+                  <span>All without limits</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <blockquote class="partnership-quote">
+        <p>
+          Publuu isn't just software to us; it's a partnership, and we're here to grow alongside you,
+          every step of the way.
+        </p>
+      </blockquote>
+
+      <div class="background-section" aria-hidden="true">
+        <section class="drives-section" aria-labelledby="drives-title">
+          <div class="drives-content">
+            <h2 id="drives-title" class="drives-title">What drives us?</h2>
+            <div class="drives-text-wrapper">
+              <div class="drives-text">
+                <div class="step" id="step1">
+                  <p>
+                    Our passion for innovation drives us to continuously improve Publuu, making it a
+                    valuable tool to creators, marketers, and businesses.
+                  </p>
+                </div>
+                <div class="step" id="step2">
+                  <p>
+                    Teamwork and creativity keep us focused on giving you the best tools for digital
+                    publishing.
+                  </p>
+                </div>
+                <div class="step" id="step1">
+                  <p>
+                    Helping you succeed and seeing your ideas come to life is what motivates us every
+                    day.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img
+            src="what-drives-us.png"
+            alt="Our team collaborating on innovative publishing solutions"
+            class="drives-image"
+          />
+        </section>
+      </div>
+
+      <section class="solutions-section" aria-labelledby="solutions-title">
+        <h2 id="solutions-title" class="section-title">Our solutions</h2>
+        <p class="solutions-subtitle">
+          See how our interactive flipbooks and features make digital publishing easy and profitable:
+        </p>
+        <div class="solutions-image-wrapper">
+          <img
+            alt="Interactive demonstration of our digital flipbook platform"
+            src="flipbook.jpg"
+            srcset="flipbook_mobile.jpg 480w, flipbook.jpg 768w, flipbook_2x.jpg 1200w"
+            sizes="(max-width: 600px) 480px, (max-width: 1200px) 768px, 1200px"
+            class="solutions-image"
+          />
+        </div>
+      </section>
+
+      <section class="timeline-section">
+        <div class="timeline-heading">
+          <h2>Our rapid growth</h2>
+          <p>Take a look at the milestones and moments that helped us grow rapidly in the industry:</p>
+        </div>
+
+        <section class="timeline">
+          <ol>
+            <li>
+              <div class="timeline-event">
+                <h4>Publuu started with a big idea:</h4>
+                <p>
+                  Helping magazine publishers share their content easily. We developed mobile software
+                  that allowed them to share flipbooks on the App Store, Google Play, and Windows
+                  Mobile.
+                </p>
+              </div>
+
+              <div class="timeline-year">
+                <span>2011</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-event">
+                <h4>Our mobile apps caught the attention of global brands</h4>
+                <p>
+                  like Optimal, Burda, and FASHION Magazine, giving us valuable insights into
+                  international mobile publication needs.
+                </p>
+              </div>
+              <div class="timeline-year">
+                <span>2014</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="timeline-event">
+                <h4>That's when things came together</h4>
+                <p>
+                  We launched Publuu.com - a platform designed to offer an easy, cost-effective way to
+                  turn PDFs into customizable, interactive flipbooks.
+                </p>
+              </div>
+              <div class="timeline-year">
+                <span>2017</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-event">
+                <h4>Publuu went global</h4>
+                <p>We expanded our services worldwide, reaching new audiences every day.</p>
+              </div>
+              <div class="timeline-year">
+                <span>2021</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-event">
+                <h4>Publuu started with a big idea:</h4>
+                <p>
+                  Helping magazine publishers share their content easily. We developed mobile software
+                  that allowed them to share flipbooks on the App Store, Google Play, and Windows
+                  Mobile.
+                </p>
+              </div>
+              <div class="timeline-year">
+                <span>2021</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-event">
+                <h4>Publuu started with a big idea:</h4>
+                <p>
+                  Helping magazine publishers share their content easily. We developed mobile software
+                  that allowed them to share flipbooks on the App Store, Google Play, and Windows
+                  Mobile.
+                </p>
+              </div>
+              <div class="timeline-year">
+                <span>2021</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-event">
+                <h4>Publuu started with a big idea:</h4>
+                <p>
+                  Helping magazine publishers share their content easily. We developed mobile software
+                  that allowed them to share flipbooks on the App Store, Google Play, and Windows
+                  Mobile.
+                </p>
+              </div>
+              <div class="timeline-year">
+                <span>2022</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-event">
+                <h4>Publuu started with a big idea:</h4>
+                <p>
+                  Helping magazine publishers share their content easily. We developed mobile software
+                  that allowed them to share flipbooks on the App Store, Google Play, and Windows
+                  Mobile.
+                </p>
+              </div>
+              <div class="timeline-year">
+                <span>2022</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-event">
+                <h4>Publuu started with a big idea:</h4>
+                <p>
+                  Helping magazine publishers share their content easily. We developed mobile software
+                  that allowed them to share flipbooks on the App Store, Google Play, and Windows
+                  Mobile.
+                </p>
+              </div>
+              <div class="timeline-year">
+                <span>2023</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-event">
+                <h4>Publuu started with a big idea:</h4>
+                <p>
+                  Helping magazine publishers share their content easily. We developed mobile software
+                  that allowed them to share flipbooks on the App Store, Google Play, and Windows
+                  Mobile.
+                </p>
+              </div>
+              <div class="timeline-year">
+                <span>2023</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-event">
+                <h4>Publuu started with a big idea:</h4>
+                <p>
+                  Helping magazine publishers share their content easily. We developed mobile software
+                  that allowed them to share flipbooks on the App Store, Google Play, and Windows
+                  Mobile.
+                </p>
+              </div>
+              <div class="timeline-year">
+                <span>2024</span>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-event">
+                <h4>Publuu started with a big idea:</h4>
+                <p>
+                  Helping magazine publishers share their content easily. We developed mobile software
+                  that allowed them to share flipbooks on the App Store, Google Play, and Windows
+                  Mobile.
+                </p>
+              </div>
+              <div class="timeline-year">
+                <span>2024</span>
+              </div>
+            </li>
+            <li></li>
+          </ol>
+        </section>
+      </section>
+
+      <section class="stats-section" aria-labelledby="stats-title">
+        <div class="container">
+          <h2 id="stats-title" class="section-title">Publuu by the numbers</h2>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-wrapper">
+                <span class="stat-number" data-end-number="13">13</span>
+                <svg alt="calendar icon" width="32" height="32">
+                  <use href="icons.svg#calendar" />
+                </svg>
+              </div>
+              <span class="stat-label">years on a market</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-wrapper">
+                <span class="stat-number" data-end-number="4.8">4.8</span>
+                <svg alt="calendar icon" width="32" height="32">
+                  <use href="icons.svg#star" />
+                </svg>
+              </div>
+              <span class="stat-label">the highest rate of all</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-wrapper">
+                <span class="stat-number" data-end-number="1" data-suffix="M">1M</span>
+                <svg alt="calendar icon" width="32" height="32">
+                  <use href="icons.svg#group" />
+                </svg>
+              </div>
+              <span class="stat-label">users trusted us</span>
+            </div>
+            <div class="stat-card">
+              <div class="stat-wrapper">
+                <span class="stat-number" data-end-number="300">300</span>
+                <svg alt="calendar icon" width="32" height="32">
+                  <use href="icons.svg#globe" />
+                </svg>
+              </div>
+              <span class="stat-label">countries</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section" aria-labelledby="testimonials-title">
+        <div class="testimonials-wrapper">
+          <div class="testimonial-card">
+            <img src="avatar.png" alt="Matt Rose" class="testimonial-avatar" width="80" height="80" />
+            <div class="testimonial-content">
+              <div class="testimonial-header">
+                <span class="testimonial-name">Matt Rose</span>
+                <p class="testimonial-role">Director at Tratech Consulting</p>
+              </div>
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <img src="avatar.png" alt="Matt Rose" class="testimonial-avatar" width="80" height="80" />
+            <div class="testimonial-content">
+              <div class="testimonial-header">
+                <span class="testimonial-name">Matt Rose</span>
+                <p class="testimonial-role">Director at Tratech Consulting</p>
+              </div>
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <img src="avatar.png" alt="Matt Rose" class="testimonial-avatar" width="80" height="80" />
+            <div class="testimonial-content">
+              <div class="testimonial-header">
+                <span class="testimonial-name">Matt Rose</span>
+                <p class="testimonial-role">Director at Tratech Consulting</p>
+              </div>
+              <div class="testimonial-rating" aria-label="5 out of 5 stars">
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+                <svg alt="" aria-hidden="true" width="14" height="14">
+                  <use href="icons.svg#star"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-featured">
+          <div class="featured-heading">
+            <svg width="42" height="42" alt="">
+              <use href="icons.svg#quote" />
+            </svg>
+            <h3 class="featured-title">What our customers say:</h3>
+          </div>
+
+          <div class="featured-quote">
+            <h3 class="quote-heading">Simple and effective which is just what is needed!</h3>
+            <div class="quote-details">
+              <h4 class="quote-question">What problems is Publuu solving?</h4>
+              <p class="quote-answer">
+                Allows us to embed a brochure into our website and be able to capture leads from
+                potential clients. The statistics on hits is also very useful as it means we can track
+                how we are performing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h2 id="contact-title" class="section-title">Let's connect!</h2>
+              <p class="contact-text">
+                Have questions or need help? <br />
+                We're here for you! <br />
+                Feel free to reach out.
+              </p>
+              <div class="social-links">
+                <span class="social-title">Visit our social media</span>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/publuu/" aria-label="Visit our Facebook page">
+                    <svg alt="" aria-hidden="true" width="40" height="40">
+                      <use href="icons.svg#facebook"></use>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/company/publuu"
+                    aria-label="Visit our LinkedIn page"
+                  >
+                    <svg alt="" aria-hidden="true" width="40" height="40">
+                      <use href="icons.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <form class="contact-form" action="/submit" method="POST">
+              <h3 class="form-heading">Write us a message:</h3>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Company ame *"
+                    id="company"
+                    name="company"
+                    class="form-input"
+                    required
+                  />
+                </div>
+
+                <div class="form-group full-width">
+                  <input
+                    type="email"
+                    placeholder="E-mail *"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    placeholder="Phone number"
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <select id="country" name="country" class="form-select">
+                    <option value="">Country</option>
+                    <option value="US">United States</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="CA">Canada</option>
+                  </select>
+                </div>
+
+                <div class="form-group full-width">
+                  <textarea
+                    placeholder="Your message *"
+                    id="message"
+                    name="message"
+                    class="form-textarea"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-group flex-row">
+                  <div class="checkbox-group">
+                    <input
+                      type="checkbox"
+                      id="privacy"
+                      name="privacy"
+                      class="checkbox-input"
+                      required
+                    />
+                    <label for="privacy" class="checkbox-label">
+                      I agree with privacy policy <span aria-hidden="true">*</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="submit-button">Send message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-wrapper">
+            <h2 class="cta-title">Get started with Publuu</h2>
+            <button class="cta-btn">Register Now</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-section">
+            <h2 class="footer-title">PUBLUU</h2>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/reviews">Reviews</a></li>
+              <li><a href="/pricing">Price plan</a></li>
+              <li><a href="/try-free">Try for free</a></li>
+              <li><a href="/sitemap">Site Map</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h2 class="footer-title">Features</h2>
+            <ul class="footer-links">
+              <li><a href="/features/virtual-bookshelf">Virtual Bookshelf</a></li>
+              <li><a href="/features/flipbook-app">Flipbook App</a></li>
+              <li><a href="/features/statistics">Statistics</a></li>
+              <li><a href="/features/pdf-tracking">PDF tracking</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h2 class="footer-title">Legal</h2>
+            <ul class="footer-links">
+              <li><a href="/legal/terms">Terms & conditions</a></li>
+              <li><a href="/legal/privacy">Privacy statement</a></li>
+              <li><a href="/legal/cookies">Cookie policy</a></li>
+              <li><a href="/legal/refund">Refund policy</a></li>
+              <li><a href="/legal/content-protection">Content Protection</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h2 class="footer-title">Help</h2>
+            <ul class="footer-links">
+              <li><a href="/help/what-is-flipbook">What is a Flipbook?</a></li>
+              <li><a href="/help/guide">Help Guide</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h2 class="footer-title">Solutions</h2>
+            <ul class="footer-links">
+              <li><a href="/solutions/flipbook-maker">Flipbook Maker</a></li>
+              <li><a href="/solutions/online-catalog">Online Catalog</a></li>
+              <li><a href="/solutions/magazine-maker">Magazine Maker</a></li>
+              <li><a href="/solutions/brochure-maker">Brochure Maker</a></li>
+              <li><a href="/solutions/pdf-flip">PDF Page Flip Effect</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h2 class="footer-title">Other</h2>
+            <ul class="footer-links">
+              <li><a href="/solutions/flipbook-maker">Business Proposal</a></li>
+              <li><a href="/solutions/online-catalog">Ebook Maker</a></li>
+              <li><a href="/solutions/magazine-maker">Multimedia Presentation</a></li>
+              <li><a href="/solutions/brochure-maker">Company Newsletter Maker</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="language-switcher">
+            <svg alt="" aria-hidden="true" width="28" height="28" fill="currentColor">
+              <use href="icons.svg#globe"></use>
+            </svg>
+            <button class="language-select" id="lang-button" aria-expanded="false" aria-haspopup="true">
+              <span>English</span>
+              <svg class="chevron-icon" width="16" height="16">
+                <use href="icons.svg#chevron-down"></use>
+              </svg>
+            </button>
+            <div id="language-dropdown" class="dropdown-menu language-menu" role="menu" hidden>
+              <a href="#?lang=en" role="menuitem" aria-current="true">English</a>
+              <a href="#?lang=es" role="menuitem">Español</a>
+              <a href="#?lang=fr" role="menuitem">Français</a>
+              <a href="#?lang=de" role="menuitem">Deutsch</a>
+            </div>
+          </div>
+
+          <div class="footer-info">
+            <p>Convert your PDF into HTML5 Online flipbook with PAGE FLIP EFFECT.</p>
+            <p class="tagline">All-in-one Flipbook Maker</p>
+          </div>
+
+          <div class="social-links">
+            <h2>Follow Us:</h2>
+            <div class="social-buttons">
+              <a href="#facebook" aria-label="Visit our Facebook page">Facebook</a>
+              <span aria-hidden="true">|</span>
+              <a href="#linkedin" aria-label="Visit our LinkedIn page">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
